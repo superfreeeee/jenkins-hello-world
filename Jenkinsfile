@@ -5,9 +5,9 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                java --version
-                mvn --version
-                docker --version
+                sh 'java --version'
+                sh 'mvn --version'
+                sh 'docker --version'
             }
         }
     }
